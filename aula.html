@@ -1,0 +1,21 @@
+<html>
+<head>
+  <title>Aula Js</title>
+</head>
+<body>
+    <h1>Calcula Média</h1>
+    <input type="text" placeholder="nota 1" id="nota1"/>
+    <input type="text" placeholder="nota 2" id="nota2"/>
+    <button type="button" onclick="calcularMedia()">Calcular Média</button>
+
+
+   <script>
+   	calcularMedia  = function(){
+		var nota1 = document.getElementById("nota1").value;
+		var nota2 = document.getElementById("nota2").value;
+		var media = (parseInt(nota1) + parseInt(nota2))/2;
+		alert("Sua média é: "  +  media);  
+	}
+   </script>
+</body>
+</html>
